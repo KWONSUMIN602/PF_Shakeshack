@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>shake shack</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="head-nav">
+                <button class="web-btn" onclick="location.href='#'">딜리버리</button>
+                <button class="web-btn" onclick="location.href='menu.html'">메뉴소개</button>
+                <div class="img">
+                    <a href="shake_shack.html">
+                        <img src="images/ss_logo.png" alt="LOGO" class="logo">
+                        <img src="images/hamburger.png" alt="hamburger LOGO" class="hamburger-logo">
+                    </a>
+                </div>
+                <button class="web-btn" onclick="window.location.href='brand_story.html';">브랜드 스토리</button>
+                <button class="web-btn" onclick="location.href='#'">커뮤니티</button>
+
+                <a href="#">
+                    <i class="fas fa-bars" id="hamburger-btn"></i>
+                </a>
+                <div id="mobile-btn">
+                    <button onclick="location.href='brand_story.html'">브랜드 스토리</button>
+                    <button onclick="location.href='menu.html'">메뉴소개</button>
+                    <button onclick="location.href='#'">커뮤니티</button>
+                    <button onclick="location.href='#'">고객센터</button>
+                </div>
+
+            </nav>
+        </header>
+
+
+        <div class="container2">
+            <contents>
+
+                <div class="fast-nav" id="main_fast_nav">
+                    <ul>
+                        <li class="web-fast-nav">
+                            <a href="#">
+                                <i class="fas fa-headset"></i>
+                                <p>고객센터</p>
+                            </a>
+                        </li>
+                        <li class="web-fast-nav">
+                            <a href="#">
+                                <i class="fas fa-search-location"></i>
+                                <p>매장찾기</p>
+                            </a>
+                        </li>
+                        <li class="web-fast-nav">
+                            <a href="#">
+                                <i class="fas fa-user-check"></i>
+                                <p>채용안내</p>
+                            </a>
+                        </li>
+                        <li class="web-fast-nav">
+                            <a href="#">
+                                <i class="fas fa-motorcycle"></i>
+                                <p>딜리버리</p>
+                            </a>
+                        </li>
+                        <li id="up-btn">
+                            <a href="#">
+                                <i class="fas fa-chevron-up"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </contents>
+
+            <div class="Menu1">
+                <h1>메뉴</h1>
+                <form action="#" method="post">
+                    <fieldset>
+                        <h3>카테고리</h3>
+                        <ul class="menu_list">
+                            <li>
+                                <input type="checkbox" name="product_all" id="product_all" checked="checked">
+                                <label for="product_all">전체 상품보기</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_burger" id="product_burger">
+                                <label for="product_burger">햄버거</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_chickenburger" id="product_chickenburger">
+                                <label for="product_chickenburger">치킨버거</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_flattopdog" id="product_flattopdog">
+                                <label for="product_flattopdog">플랫-탑 도그</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_side" id="product_side">
+                                <label for="product_side">사이드</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_custard" id="product_custard">
+                                <label for="product_custard">커스터드</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_concretes" id="product_concretes">
+                                <label for="product_concretes">콘크리트</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_drinks" id="product_drinks">
+                                <label for="product_drinks">음료</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_beer_wine" id="product_beer_wine">
+                                <label for="product_beer_wine">맥주/와인</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_breakfast" id="product_breakfast">
+                                <label for="product_breakfast">아침메뉴</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="chk" name="product_woof" id="product_woof">
+                                <label for="product_woof">강아지 메뉴</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="Menu2">
+                <!--햄버거-->
+                <div class="detail burger">
+                    <h3>햄버거</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/burger_01.jpg" alt="">
+                            <div class="txt">
+                                <h2>쉑버거</h2>
+                                <small>Shack Burger</small>
+                                <p><br>비프패티와 함께 토마토, 양상추 쉑소스가 토핑된 치즈버거</p><br>
+                                <p>Single W 6,9</p>
+                                <p>Double W 10,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/burger_02.jpg" alt="">
+                            <div class="txt">
+                                <h2>스모크 쉑버거</h2>
+                                <small>Smoke Shack Burger</small>
+                                <p><br>애플 우드 칩으로 훈연한 짭짤한 베이컨, 매콤한 체리페퍼, 비프패티와 쉑소스가 토핑된 치즈버거</p>
+                                <br>
+                                <p>Single W 8,9</p>
+                                <p>Double W 12,9</p>
+                            </div>
+                        </div>
+
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/burger_03.jpg" alt="">
+                            <div class="txt">
+                                <h2>슈룸 버거</h2>
+                                <small>Shroom Burger</small>
+                                <p><br>치즈로 속을 채우고 바삭하게 튀겨낸 포토벨로 버섯 패티에 양상추, 토마토, 쉑소스를 올린 베지테리안 버거</p>
+                                <br>
+                                <p>W 9,4</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/burger_04.jpg" alt="">
+                            <div class="txt">
+                                <h2>쉑 스텍 버거</h2>
+                                <small>Shack Stack Burger</small>
+                                <p><br>포토벨로 버섯패티, 비프패티와 함께 토마토, 양상추, 쉑소스가 토핑된 치즈버거</p>
+                                <br>
+                                <p>W 12,4</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/burger_05.jpg" alt="">
+                            <div class="txt">
+                                <h2>햄버거</h2>
+                                <small>Hamburger</small>
+                                <p><br>고소한 포테이토 번과 비프패티의 풍미 그대로를 느낄 수 있는 기본에 충실한 버거</p>
+                                <br>
+                                <p>Single W 5,4</p>
+                                <p>Double W 9,0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--치킨버거-->
+                <div class="detail chickenburger">
+                    <h3>치킨버거</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/k_burger_1.jpg" alt="">
+                            <div class="txt">
+                                <h2>치킨 쉑 버거</h2>
+                                <small>Chicken Shack Burger</small>
+                                <p><br>버터밀크에 수비드한 후 바삭하게 튀겨낸 치킨 패티에 양상추, 피클, 허브마요 소스를 곁들인 버거</p>
+                                <br>
+                                <p>W 7,9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--핫도그-->
+                <div class="detail flattopdog">
+                    <h3>플랫-탑 도그</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/hotdog_01.jpg" alt="">
+                            <div class="txt">
+                                <h2>핫도그</h2>
+                                <small>Hot Dog</small>
+                                <p><br>비프 소시지가 들어간 담백한 핫 도그</p>
+                                <br>
+                                <p>W 4,4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--사이드-->
+                <div class="detail sides">
+                    <h3>사이드</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view"><img src="images/menu/side_01.jpg" alt="">
+                            <div class="txt">
+                                <h2>핫도그</h2>
+                                <small>Hot Dog</small>
+                                <p><br>
+                                    [2-3월 한정] 한 입에 먹기 좋은 바삭한 치킨 바이트와 허니 머스터드 또는 BBQ 소스를 선택하여 함께 즐기는 메뉴</p>
+                                <br>
+                                <p>6pcs W 4.8</p>
+                                <p>10pcs W 6.9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/side_02.jpg" alt="">
+                            <div class="txt">
+                                <h2>치즈 감자튀김</h2>
+                                <small>Cheese Fries</small>
+                                <p><br>쉐이크쉑만의 특별한 치즈 소스를 듬뿍 올린 바삭한 크링클 컷 프라이</p>
+                                <br>
+                                <p>W 4,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/side_03.jpg" alt="">
+                            <div class="txt">
+                                <h2>감자튀김</h2>
+                                <small>Fries</small>
+                                <p><br>바삭하고 담백한 크링클컷 프라이</p>
+                                <br>
+                                <p>W 3,9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--커스터드-->
+                <div class="detail custard">
+                    <h3>커스터드</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/custard_01.jpg" alt="">
+                            <div class="txt">
+                                <h2>라즈베리 로즈 쉐이크</h2>
+                                <small>Rasberry Rose Shake</small>
+                                <p><br>[3-4월 한정]바닐라 쉐이크에 라즈베리, 로즈 향을 더해 달콤하고 부드러운 시즌 한정 쉐이크</p>
+                                <br>
+                                <p>W 6,8</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/custard_02.jpg" alt="">
+                            <div class="txt">
+                                <h2>쉐이크</h2>
+                                <small>Classic Hand-Spun Shakes</small>
+                                <p><br>
+                                    바닐라, 초콜렛, 솔티드 카라멜, 블랙/화이트, 스트로베리, 피넛버터, 커피</p>
+                                <br>
+                                <p>W 5,9</p>
+                            </div>
+                        </div>
+                        <div class="menu_li_view">
+                            <img src="images/menu/custard_03.jpg" alt="">
+                            <div class="txt">
+                                <h2>플로트</h2>
+                                <small>Float</small>
+                                <p><br>부드러운 바닐라 커스터드와 톡톡 터지는 탄산이 만나 탄생한 색다른 음료 (루트 비어/퍼플 카우/크림시클®)</p>
+                                <br>
+                                <p>W 5,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/custard_05.jpg" alt="">
+                            <div class="txt">
+                                <h2>컵 / 콘</h2>
+                                <small>Cup / Cones</small>
+                                <p><br>매장에서 매일 신선하게 제조하는 부드럽고 쫀득한 바닐라, 초콜렛 커스터드</p>
+                                <br>
+                                <p>Single W 4.9</p>
+                                <p>Double W 5,9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--콘크리트-->
+                <div class="detail concretes">
+                    <h3>콘크리트</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_shackattack.jpg" alt="">
+                            <div class="txt">
+                                <h2>쉑 어택</h2>
+                                <small>Shack Attack</small>
+                                <p><br>진한 초콜릿 커스터드에 퍼지 소스와 세 가지 초콜릿 토핑이 블렌딩된 쉐이크쉑의 대표 콘크리트</p>
+                                <br>
+                                <p>Single W 4.9</p>
+                                <p>Double W 5,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_gangnam.jpg" alt="">
+                            <div class="txt">
+                                <h2>강남</h2>
+                                <small>Gangnam</small>
+                                <p><br>달콤한 딸기 잼과 고소한 콩가루, 쇼트브레드가 어우러진 쉐이크쉑 강남의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 4.9</p>
+                                <p>Double W 5,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_cheondam327.jpg" alt="">
+                            <div class="txt">
+                                <h2>청담327</h2>
+                                <small>Cheondam327</small>
+                                <p><br>부드럽고 달콤한 바나나와 꿀, 그리고 바삭한 쇼트브레드가 어우러진 쉐이크쉑 청담의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 4.9</p>
+                                <p>Double W 5,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_dongdaemun.jpg" alt="">
+                            <div class="txt">
+                                <h2>동대문 레인보우</h2>
+                                <small>Dongdaemun Rainbow</small>
+                                <p><br>달콤한 딸기 잼과 폭신한 글레이즈드 도넛, 그리고 알록달록 레인보우 스프링클이 어우러진 쉐이크쉑 두타의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_crunchstar.jpg" alt="">
+                            <div class="txt">
+                                <h2>크런치 스타</h2>
+                                <small>Crunchstar</small>
+                                <p><br>달콤 바삭한 초콜렛 토피와 초콜렛 청크, 그리고 고소한 콩가루가 어우러진 쉐이크쉑 분당의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_goyangblossom.jpg" alt="">
+                            <div class="txt">
+                                <h2>고양 블러썸</h2>
+                                <small>Goyang Blossom</small>
+                                <p><br>달콤한 딸기 잼과 바삭한 슈가 콘, 그리고 화려한 레인보우 스프링클이 어우러진 쉐이크쉑 고양의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_flymetotheshack.jpg" alt="">
+                            <div class="txt">
+                                <h2>플라이 미 투 더 쉑</h2>
+                                <small>Fly Me To The Shack</small>
+                                <p><br>상큼한 스트로베리 퓨레와 달콤한 꿀, 그리고 바삭한 슈가 콘이 함께 어우러진 쉐이크쉑 인천공항의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_centralberrybanhana.jpg" alt="">
+                            <div class="txt">
+                                <h2>센트럴 베리 반하나</h2>
+                                <small>Central Berry Banhana</small>
+                                <p><br>부드러운 바나나와 달콤 상큼한 스트로베리 퓨레, 그리고 바삭한 슈가 콘이 함께 어우러진 쉐이크쉑 센트럴시티의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_crunchstreet.jpg" alt="">
+                            <div class="txt">
+                                <h2>크런치 스트리트</h2>
+                                <small>Crunch Street</small>
+                                <p><br>달콤 바삭한 초콜렛 토피와 초콜렛 청크, 그리고 고소한 피넛 버터 소스가 어우러진 쉐이크쉑 송도의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_busanstreet.jpg" alt="">
+                            <div class="txt">
+                                <h2>부산 스트리트</h2>
+                                <small>Busan Street</small>
+                                <p><br>부산의 소울 푸드, 씨앗호떡에서 영감을 받아 탄생한 쉐이크쉑 부산 서면의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_grangiwa.jpg" alt="">
+                            <div class="txt">
+                                <h2>그랑 기와</h2>
+                                <small>Gran Giwa</small>
+                                <p><br>달콤한 바닐라 , 초콜릿 커스터드 위에 흑임자의 고소함이 더해진 쉐이크쉑 종각의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_injeolmitime.jpg" alt="">
+                            <div class="txt">
+                                <h2>인절미 타임</h2>
+                                <small>Injeolmi Time</small>
+                                <p><br>달콤하고 진한 솔티드 허니와 고소하고 쫄깃한 인절미가 매력적인 쉐이크쉑 타임스퀘어의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_ipoppin.jpg" alt="">
+                            <div class="txt">
+                                <h2>아이-팝핀</h2>
+                                <small>I-Poppin</small>
+                                <p><br>쉑 메이드 된장 캐러멜 소스와 달콤한 캐러멜 팝콘, 땅콩이 어우러져 바삭한 식감이 매력적인 쉐이크쉑 용산의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_dalgonadaegu.jpg" alt="">
+                            <div class="txt">
+                                <h2>달고나 대구</h2>
+                                <small>Dalgona Daegu</small>
+                                <p><br>대구 꿀떡의 쫀득함과 달고나의 달콤함이 매력적인 쉐이크쉑 대구 동성로의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/concretes_daejeon.jpg" alt="">
+                            <div class="txt">
+                                <h2>대전 밤 밤</h2>
+                                <small>Daejeon Bam Bam</small>
+                                <p><br>대전에서 생산된 고소한 밤과 달콤한 바닐라 커스터드가 만나 탄생한 쉐이크쉑 대전 타임월드의 시그니처 콘크리트</p>
+                                <br>
+                                <p>Single W 5.9</p>
+                                <p>Double W 8,9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--음료-->
+                <div class="detail drinks">
+                    <h3>음료</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/drink_01.jpg" alt="">
+                            <div class="txt">
+                                <h2>라즈베리 레몬에이드</h2>
+                                <small>Raspberry Lemonade</small>
+                                <p><br>[3-4월 한정]라즈베리와 레몬에이드가 만난 상큼한 시즌 한정 음료</p>
+                                <br>
+                                <p>Small W 3,9</p>
+                                <p>Large W 4,5</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/drink_02.jpg" alt="">
+                            <div class="txt">
+                                <h2>레몬에이드</h2>
+                                <small>Lemonade</small>
+                                <p><br>매일 매장에서 신선하게 제조하는 상큼한 레몬에이드</p>
+                                <br>
+                                <p>Small W 3,9</p>
+                                <p>Large W 4,5</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/drink_03.jpg" alt="">
+                            <div class="txt">
+                                <h2>유기농 아이스티</h2>
+                                <small>Fresh Brewed Iced Tea</small>
+                                <p><br>홍차를 직접 우려내어 달지 않고 향긋한 아이스티</p>
+                                <br>
+                                <p>Small W 3,4</p>
+                                <p>Large W 3,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/drink_04.jpg" alt="">
+                            <div class="txt">
+                                <h2>피프티/피프티</h2>
+                                <small>Fifty Fifty</small>
+                                <p><br>레몬에이드와 아이스티를 반반 섞어 만든 쉐이크쉑의 시그니처 음료</p>
+                                <br>
+                                <p>Small W 3,5</p>
+                                <p>Large W 4,4</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/drink_05.jpg" alt="">
+                            <div class="txt">
+                                <h2>탄산음료</h2>
+                                <small>Fountain Soda</small>
+                                <p><br>코카콜라, 코카콜라 제로, 스프라이트, 환타 오렌지, 환타 그레이프, 환타 파인애플</p>
+                                <br>
+                                <p>Small W 2,7</p>
+                                <p>Large W 3,3</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/drink_06.jpg" alt="">
+                            <div class="txt">
+                                <h2>루트 비어</h2>
+                                <small>Abita Root Beer</small>
+                                <p><br>청량감 있는 독특한 미국식 무알콜 탄산음료</p>
+                                <br>
+                                <p>Bottle W 4,4</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/drink_07.jpg" alt="">
+                            <div class="txt">
+                                <h2>핫 티</h2>
+                                <small>Hot Tea</small>
+                                <p><br>보성 유기농 찻잎을 우려낸 녹차, 홍차, 페퍼민트&레몬그라스 블렌딩 티</p>
+                                <br>
+                                <p>W 3,4</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/drink_08.jpg" alt="">
+                            <div class="txt">
+                                <h2>커피</h2>
+                                <small>Coffee</small>
+                                <p><br>미국 스페셜티 커피 브랜드 스텀프타운의 쉑 블렌드 원두를 사용한 드립 커피</p>
+                                <br>
+                                <p>(Only T2 / Central City)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--맥주/와인-->
+                <div class="detail beer_wine">
+                    <h3>맥주/와인</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/beer_01.jpg" alt="">
+                            <div class="txt">
+                                <h2>쉑 마이스터 에일</h2>
+                                <small>Shack Meister Ale</small>
+                                <p><br>[전 매장 공통 메뉴] 시원한 솔 향과 빵의 풍미를 지닌 몰트 향이 쉐이크쉑의 버거와 잘 어울리는 에일</p>
+                                <br>
+                                <p>W 6,8</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/beer_02.jpg" alt="">
+                            <div class="txt">
+                                <h2>슬로우 IPA</h2>
+                                <small>Slow IPA</small>
+                                <p><br>[전 매장 공통 메뉴] 홉을 천천히 맥주에 스며들게 하여 끝맛이 깔끔한 시트러스 아로마 향의 IPA</p>
+                                <br>
+                                <p>W 6,8</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/beer_03.jpg" alt="">
+                            <div class="txt">
+                                <h2>고릴라거</h2>
+                                <small>Gorillager</small>
+                                <p><br>[대구 동성로, 대전 타임월드점 제외 전매장 공통 메뉴] 가볍고 부드러우며 약간의 드라이함이 특징인 대중적인 스타일의 라거</p>
+                                <br>
+                                <p>W 6,8</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/beer_04.jpg" alt="">
+                            <div class="txt">
+                                <h2>쉑 레드 / 쉑 화이트</h2>
+                                <small>Shake Red / Shack White</small>
+                                <p><br>프랑스 라파주 와이너리에서 쉐이크쉑을 위해 특별히 생산한 쉑 와인</p>
+                                <br>
+                                <p>Glass W 7,8</p>
+                                <p>Bottle 29,9</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/beer_05.jpg" alt="">
+                            <div class="txt">
+                                <h2>코리아 페일 에일</h2>
+                                <small>Korea Pale Ale</small>
+                                <p><br>[부산 서면점 특화 메뉴] 한국 스타일에 맞추어 설계한 트로피컬하고 마시기 쉬운 페일 에일</p>
+                                <br>
+                                <p>W 6,8</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/beer_06.jpg" alt="">
+                            <div class="txt">
+                                <h2>유자 퓨어 에일</h2>
+                                <small>Yuja Pure Ale</small>
+                                <p><br>[대전 타임월드점 특화 메뉴] 고흥 유자를 사용하여 가벼우면서도 복합적인 풍미를 가진 에일</p>
+                                <br>
+                                <p>W 6,8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--아침메뉴-->
+                <div class="detail breakfast">
+                    <h3>아침메뉴<br>
+                        <span style="font-size: small">(인천공항 T2 전용 ~10:00am)</span>
+                    </h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/breakfast_01.jpg" alt="">
+                            <div class="txt">
+                                <h2>소세지 에그 버거</h2>
+                                <small>Sousage, Egg N'Cheese</small>
+                                <p><br>유정란 프라이, 돼지고기 소시지, 체다 치즈가 토핑된 버거</p>
+                                <br>
+                                <p>One egg W6.8</p>
+                                <p>Two eggs W8.0</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/breakfast_02.jpg" alt="">
+                            <div class="txt">
+                                <h2>베이컨 에그 버거</h2>
+                                <small>Bacon,Egg N'Cheese</small>
+                                <p><br>유정란 프라이, 애플우드 칩으로 훈연한 베이컨, 체다 치즈가 토핑된 버거</p>
+                                <br>
+                                <p>One egg W5.8</p>
+                                <p>Two eggs W7.0</p>
+                            </div>
+                        </div>
+
+                        <div class="menu_li_view">
+                            <img src="images/menu/breakfast_03.jpg" alt="">
+                            <div class="txt">
+                                <h2>에그 버거</h2>
+                                <small>Egg N'Cheese</small>
+                                <p><br>유정란 프라이와 체다 치즈가 토핑된 버거</p>
+                                <br>
+                                <p>One egg W4.8</p>
+                                <p>Two eggs W6.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--강아지메뉴-->
+                <div class="detail woof">
+                    <h3>강아지메뉴</h3>
+
+                    <div class="menu_wrap">
+                        <div class="menu_li_view">
+                            <img src="images/menu/woof_01.jpg" alt="">
+                            <div class="txt">
+                                <h2>백 오-본</h2>
+                                <small>Bag O-Bones</small>
+                                <p><br>강아지용 비스킷 5개 세트</p>
+                                <br>
+                                <p>W 6,0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="mobile_sns">
+                    <ul>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="foot-box">
+                    <img src="images/ss_white.png" alt="white logo">
+                    <p>©2004-2021 SHAKE SHACK. ALL RIGHTS RESERVED.
+                        <br><br>
+                        SOME INFORMATION ON THIS SITE MAY VARY SLIGHTLY BY LOCATION AND IN STADIUMS, EVENT VENUES AND INTERNATIONAL SHACKS.
+                        <br><br>
+                        LIKE US!
+                    </p>
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

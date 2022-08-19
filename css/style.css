@@ -1,0 +1,1286 @@
+@charset"utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    position: relative;
+    background-image: url(../images/bg.jpg);
+}
+
+container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+/*====================Header 영역========================*/
+header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 5px solid #8cc63f;
+}
+
+.head-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.head-nav .img {
+    display: inline-block;
+    width: 15%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.head-nav img {
+    padding-top: 20px;
+    width: 100%;
+}
+
+.head-nav .img .hamburger-logo {
+    display: none;
+}
+
+.head-nav button {
+    width: 20%;
+    text-align: center;
+    padding: 0.5%;
+    font-size: 1.2em;
+    border: none;
+    background-color: #fff;
+    color: #8cc63f;
+    cursor: pointer;
+}
+
+
+#hamburger-btn {
+    display: none;
+}
+
+#mobile-btn {
+    display: none;
+}
+
+@media screen and (max-width:599px) {
+
+    .container2 {
+        position: absolute;
+        top: 68px;
+    }
+
+    .head-nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 68px;
+        min-height: 68px;
+        background-color: #8cc63f;
+        z-index: 1000;
+    }
+
+    .web-btn {
+        display: none;
+    }
+
+    .head-nav .img .logo {
+        display: none;
+    }
+
+    .head-nav .img {
+        position: absolute;
+        left: 0;
+    }
+
+    .head-nav .img .hamburger-logo {
+        width: 55px;
+        padding-top: 10px;
+        padding-left: 10px;
+        float: left;
+        display: inline-block;
+        background-color: #8cc63f;
+    }
+
+    #hamburger-btn {
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        color: #fff;
+        font-size: 2.5em;
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .head-nav button {
+        width: 100%;
+        padding: 15px;
+        border-top: 1px dotted #8cc63f;
+    }
+
+    #mobile-btn {
+        width: 100%;
+        position: absolute;
+        top: 68px;
+        background-color: #8cc63f;
+        color: #fff;
+    }
+
+    .head-nav .img {
+        width: 40%;
+    }
+
+    video {
+        border-bottom: 5px solid #8cc63f;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .head-nav {
+        min-width: 700px;
+    }
+
+    .head-nav button {
+        font-size: 1em;
+    }
+
+    #mobile-btn {
+        display: none;
+    }
+
+}
+
+
+/*=====================contents 영역=======================*/
+
+/*-----------------fast-nav 영역----------------*/
+
+.fast-nav {
+    position: fixed;
+    top: 250px;
+    right: 50px;
+    width: 60px;
+    z-index: 100000;
+}
+
+.fast-nav a {
+    display: block;
+}
+
+.fast-nav li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fast-nav li:hover i {
+    border-color: #8cc63f;
+    background-color: #49941e;
+}
+
+.fast-nav li:hover p {
+    color: #49941e;
+}
+
+.fast-nav #up-btn {
+    ;
+    display: none;
+}
+
+.fast-nav i {
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+    color: #fff;
+    font-size: 25px;
+    padding: 13px 0;
+}
+
+.fast-nav p {
+    display: block;
+    font-size: 0.75em;
+    color: #828282;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+
+#main_fast_nav p {
+    color: #fff;
+}
+
+@media screen and (max-width:599px) {
+    .web-fast-nav {
+        display: none;
+    }
+
+    .fast-nav {
+        position: fixed;
+        top: 90%;
+        right: 1%;
+        z-index: 100000;
+        text-align: center;
+    }
+
+    .fast-nav i {
+        font-size: 30px;
+        padding: none;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .fast-nav {
+        width: 45px;
+        position: fixed;
+        top: 150px;
+        right: 30px;
+    }
+
+    .fast-nav i {
+        font-size: 20px;
+        padding: 8px 3px;
+    }
+
+    .fast-nav p {
+        font-size: 1vw;
+    }
+}
+
+/*----------------section 1 영역-----------------*/
+
+.section1 {
+    width: 100%;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    background-size: cover;
+    z-index: -100;
+    vertical-align: bottom;
+}
+
+.section1 h1 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 10vw;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #8cc63f;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.8));
+}
+
+.section1 .sns {
+    position: absolute;
+    bottom: 7px;
+    left: 15px;
+    width: 30%;
+}
+
+.section1 .sns img {
+    width: 15%;
+    max-width: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 3%;
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.8));
+}
+
+.section1 .thenews {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    width: 65%;
+    height: 30%;
+    background-color: #8cc63f;
+    border-radius: 80px 0 0 0;
+    filter: drop-shadow(-3px -3px 8px rgba(0, 0, 0, 0.4));
+    color: #fff;
+}
+
+.section1 .text {
+    width: 500px;
+    height: 230px;
+    overflow: hidden;
+    margin-left: 80px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.thenews h3 {
+    font-size: 2vw;
+}
+
+.thenews li {
+    list-style: square;
+    margin-top: 20px;
+    font-size: 1.1vw;
+}
+
+@media screen and (max-width:599px) {
+
+    .section1 h1 {
+        position: absolute;
+        top: 30%;
+        left: 9%;
+        font-size: 12vw;
+    }
+
+    .section1 button {
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        border: 3px solid #8cc63f;
+        background-color: #fff;
+        border-radius: 10px;
+        font-size: 2em;
+        padding: 10px 30px;
+        color: #8cc63f;
+    }
+
+    .section1 button:hover {
+        cursor: pointer;
+    }
+
+    .section1 .sns {
+        display: none;
+    }
+
+    .section1 .thenews {
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .section1 .sns {
+        position: absolute;
+        bottom: 7px;
+        left: 10px;
+        width: 35%;
+    }
+
+    .section1 .sns img {
+        margin-right: 1%;
+    }
+
+    .section1 .text {
+        min-height: 80px;
+        overflow: hidden;
+        margin-left: 60px;
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+
+    .thenews li {
+        margin-top: 10px;
+    }
+
+}
+
+/*----------------section 2 영역-----------------*/
+
+.section2 {
+    margin-top: 3%;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+.section2 .wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section2 a {
+    float: left;
+    display: inline-block;
+    position: relative;
+}
+
+.section2 img {
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 3%;
+    border: 3px solid rgba(255, 255, 255, 0);
+}
+
+.section2 .txt {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    text-align: center;
+    line-height: 300px;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.section2 a:hover .txt {
+    opacity: 1;
+}
+
+.section2 a:hover img {
+    border: 3px solid #8cc63f;
+}
+
+.section2 .txt h2 {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:599px) {
+    .section2 .wrap {
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .section2 h1 {
+        font-size: 1.7em;
+    }
+
+    .section2 a {
+        width: 50%;
+        min-width: 150px;
+    }
+
+    .section2 img {
+        width: 100%;
+        min-width: 150px;
+        height: 150px;
+    }
+
+    .section2 .txt {
+        width: 100%;
+        min-width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .section2 .wrap {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .section2 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section2 .txt {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+    }
+}
+
+/*----------------section 3 영역-----------------*/
+
+.section3 {
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    color: #fff;
+}
+
+.section3 .wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section3 h1 {
+    text-align: center;
+    font-size: 1.9em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.section3 h1 small {
+    font-size: 0.8em;
+}
+
+.section3 p {
+    font-size: 1.1em;
+}
+
+.section3 button {
+    margin-top: 30px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background-color: #8cc63f;
+    padding: 15px;
+    font-size: 1.1em;
+    color: #fff;
+    cursor: pointer;
+}
+.section3 button:hover{
+    background-color: #2d2d2d;
+}
+@media screen and (max-width:599px) {
+    .section3 .wrap {
+        width: 100%;
+    }
+
+    .section3 h1 {
+        text-align: center;
+        font-size: 1.7em;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .section3 h1 small {
+        font-size: 0.6em;
+    }
+
+    .section3 p {
+        font-size: 0.9em;
+    }
+
+    .section3 button {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .section3 .wrap {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/*----------------section 4 영역-----------------*/
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slideshow {
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .9
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .9
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*============================footer 영역=========================*/
+
+footer {
+    clear: both;
+    background-color: #2d2d2d;
+    padding: 30px 0;
+}
+
+footer .foot-box {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.foot-box img {
+    width: 200px;
+}
+
+.foot-box p {
+    font-size: 0.5em;
+    color: #fff;
+    opacity: 0.5;
+}
+
+footer .mobile_sns {
+    display: none;
+}
+
+@media screen and (max-width:599px) {
+    footer {
+        padding: 0 0 30px 0;
+    }
+
+    footer .mobile_sns {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .mobile_sns li {
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid #3d3d3d;
+    }
+
+    footer .mobile_sns a {
+        color: #fff;
+        opacity: 0.5;
+    }
+
+}
+
+/*===============!!!!!!!!--brand_story 페이지 영역--!!!!!!!!=====================*/
+
+/*----------------BS_section 1 영역--------------*/
+
+.BS_section1 {
+    width: 60%;
+    height: 800px;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.order-btn {
+    display: none;
+}
+
+.BS_section1 article {
+    margin-bottom: 15%;
+}
+
+.BS_section1 h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10%;
+    background-color: #8cc63f;
+    border-radius: 15px;
+    padding: 15px;
+    color: #fff;
+}
+
+.BS_section1 h2.h2::after {
+    content: "";
+    border-bottom: 2px solid #8cc63f;
+    width: 50px;
+    margin: 1% auto;
+
+}
+
+.BS_section1 img {
+    margin-left: 20px;
+    width: 35%;
+    float: right;
+}
+
+.BS_section1 .text {
+    width: 65%;
+    padding-left: 10%;
+}
+
+.BS_section1 .text p {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.BS_section1 small {
+    color: #aaa;
+    font-size: smaller;
+}
+
+@media screen and (max-width:599px) {
+    .BS_section1 {
+        width: 90%;
+        height: 1200px;
+        min-width: 300px;
+        margin-bottom: 5%;
+    }
+
+    .order-btn {
+        margin-top: 10px;
+        padding: 5px;
+        display: block;
+        background-color: #8cc63f;
+        border: 3px solid #8cc63f;
+        border-radius: 20px;
+        font-size: 2.3em;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .BS_section1 h2 {
+        font-size: 1.8em;
+    }
+
+    .BS_section1 img {
+        width: 100%;
+        overflow: hidden;
+        float: left;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .BS_section1 .text {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .BS_section1 .text h4 {
+        font-size: 1.1em;
+    }
+
+    .BS_section1 .text p {
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .BS_section1 {
+        width: 80%;
+        height: 750px;
+        min-width: 740px;
+        margin-bottom: 15%;
+    }
+
+    .BS_section1 img {
+        width: 40%;
+        padding-top: 25px;
+    }
+
+    .BS_section1 .text {
+        width: 60%;
+    }
+
+    .BS_section1 .text p {
+        font-size: 0.9em;
+    }
+}
+
+
+/*----------------BS_section 2 영역--------------*/
+
+.BS_section2 {
+    clear: both;
+    width: 60%;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 150px auto;
+
+}
+
+.BS_icon {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.menu {
+    width: 1.8em;
+    height: 1.8em;
+    font-size: 3.2em;
+    text-align: center;
+    line-height: 1.8em;
+    color: #fff;
+    background-color: #8cc63f;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+.menu:hover,
+.menu.btnactivate {
+    color: #0c7a00;
+    border-color: #0c7a00;
+}
+
+/*------------글 단락-----------*/
+.BS_section2 .text {
+    margin: 5% 0;
+    text-align: center;
+}
+
+.BS_section2 h2 {
+    font-size: 2em;
+}
+
+.BS_section2 .text p {
+    margin: 3% 0;
+    color: #000;
+}
+
+.BS_section2 .text h4 {
+    font-size: 1.5em;
+    color: #8cc63f;
+}
+
+.BS_section2 .text small {
+    color: #000;
+    opacity: 0.8;
+    font-size: smaller;
+    padding: 5%;
+}
+
+.BS_section2 .text img {
+    padding: 5%;
+}
+
+.BS_section2 article {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.BS_section2 .text article:nth-of-type(2) {
+    border-left: 2px solid #8cc63f;
+    border-right: 2px solid #8cc63f;
+}
+
+#green {
+    display: none;
+}
+
+#born {
+    display: none;
+}
+
+#neighbor {
+    display: none;
+}
+
+
+
+@media screen and (max-width:599px) {
+    .BS_section2 {
+        width: 90%;
+        min-width: 300px;
+        overflow: hidden;
+    }
+
+    .BS_icon {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .menu {
+        width: 1.7em;
+        height: 1.7em;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 1.7em;
+        color: #fff;
+        background-color: #8cc63f;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        justify-content: center;
+        margin: 0 0.1em;
+        cursor: pointer;
+    }
+
+    .BS_section2 article {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .BS_section2 .text article:nth-of-type(2) {
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid #8cc63f;
+        border-bottom: 2px solid #8cc63f;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .BS_section2 {
+        width: 80%;
+        min-width: 740px;
+    }
+
+    .BS_section2 h2 {
+        font-size: 1.8em;
+    }
+
+    .text img {
+        width: 90%;
+    }
+}
+
+/*----------------BS_section 4 영역--------------*/
+
+.BS_section3 {
+    width: 60%;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.BS_section3 h2 {
+    font-size: 1.8em;
+    text-align: center;
+    background-color: #8cc63f;
+    border-radius: 20px;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.proposal_explain {
+    width: 50%;
+    display: inline-block;
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+
+.proposal_explain .img {
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.proposal_explain img {
+    width: 100%;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.proposal_style {
+    width: 50%;
+    float: right;
+}
+
+.proposal_explain p {
+    color: #000;
+    font-size: 0.9em;
+    opacity: 0.8;
+    padding: 3%;
+}
+
+.proposal_style,
+.proposal_explain {
+    margin-top: 30px;
+}
+
+.proposal_style input,
+.proposal_style textarea {
+    display: block;
+    border: 3px solid #8cc63f;
+    border-radius: 30px;
+    width: 100%;
+    height: 60px;
+    font-size: 1em;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.proposal_style #name,
+.proposal_style #phone {
+    width: 49%;
+    display: inline-block;
+}
+
+.proposal_style #description {
+    height: 200px;
+}
+
+.proposal_style #submit {
+    padding: 0;
+    cursor: pointer;
+}
+.proposal_style #submit:hover{
+    background-color: #8cc63f;
+}
+
+@media screen and (max-width:599px) {
+    .BS_section3 {
+        width: 90%;
+        min-width: 300px;
+        overflow: hidden;
+    }
+
+    .BS_section3 h2 {
+        font-size: 1.8em;
+        margin-bottom: 0;
+    }
+
+    .proposal_explain {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .proposal_style {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .proposal_style #name,
+    .proposal_style #phone {
+        width: 100%;
+    }
+
+    .proposal_explain .img {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .BS_section3 {
+        width: 80%;
+        min-width: 740px;
+    }
+
+    .proposal_style input,
+    .proposal_style textarea {
+        display: block;
+        border: 3px solid #8cc63f;
+        border-radius: 30px;
+        width: 100%;
+        height: 50px;
+        font-size: 1em;
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+/*===============!!!!!!!!--menu 페이지 영역--!!!!!!!!=====================*/
+
+/*----------------Menu1 영역--------------*/
+
+.Menu1 {
+    width: 60%;
+    padding-top: 30px;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+.Menu1 h1 {
+    text-align: center;
+    font-size: 1.8em;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+fieldset h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.menu_list {
+    margin-top: 10px;
+    height: 80px;
+}
+
+.menu_list li {
+    display: inline-block;
+    padding: 10px;
+    opacity: 0.6;
+}
+
+.menu_list input {
+    cursor: pointer;
+}
+
+.menu_list label {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:599px) {
+    .Menu1 {
+        padding: 20px;
+        width: 100%;
+        min-width: 350px;
+    }
+
+    .Menu1 h1 {
+        font-size: 1.7em;
+        margin-bottom: 20px;
+    }
+
+    .menu_list {
+        height: 100px;
+        overflow-y: scroll;
+    }
+
+    .menu_list li {
+        display: block;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .Menu1 {
+        width: 80%;
+        min-width: 740px;
+    }
+}
+
+/*----------------Menu2 영역--------------*/
+
+.Menu2 {
+    width: 60%;
+    padding-top: 30px;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+.Menu2 h3 {
+    width: 100%;
+    text-align: center;
+    background-color: #8cc63f;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.Menu2 > div {
+    margin-bottom: 30px;
+    clear: both;
+}
+
+.Menu2 .menu_wrap {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 30px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.Menu2 .menu_li_view {
+    width: 50%;
+    min-width: 300px;
+    height: 230px;
+    float: left;
+    display: inline-block;
+}
+
+.Menu2 img {
+    float: left;
+    width: 200px;
+    height: 154px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+}
+
+.Menu2 .txt {
+    padding: 0 10px 10px 10px;
+}
+
+.Menu2 .txt h2 {
+    font-size: 1.1em;
+}
+
+.Menu2 .txt small {
+    padding-bottom: 10px;
+}
+
+.Menu2 .txt p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+@media screen and (max-width:599px) {
+    .Menu2 {
+        padding: 20px;
+        width: 100%;
+        min-width: 350px;
+    }
+
+    .Menu2 .menu_li_view {
+        width: 100%;
+    }
+
+    .Menu2 img {
+        width: 160px;
+        height: 114px;
+    }
+    .Menu2 .txt p {
+    font-size: 0.75em;
+    color: #666;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .Menu2 {
+        width: 80%;
+        min-width: 740px;
+    }
+    .Menu2 img {
+    float: left;
+    width: 180px;
+    height: 134px;
+}
+    .Menu2 .txt p {
+    font-size: 0.8em;
+    color: #666;
+}
+
+}
